@@ -7,8 +7,17 @@
 </head>
 <body>
     <div>
-        <input typ="form" id="product-name"/>
+        <label>Product Name: </label>
     </div>
-    <button>Submit</button>
+        <input type="text" id="product-name"/>
+    <div>
+        <label>Select the type of delivery</label><br/>
+        <input type="radio" value="express" name="delivery" class="delivery"/><label>Express delivery less than 7 days</label><br/>
+        <input type="radio" value="regular" name="delivery" class="delivery"/><label>Normal delivery 14 days</label><br/>
+        <input type="radio" value="special" name="delivery" class="delivery"/><label>Overnight delivery buy drone</label>
+    </div>
+
+    <button id="submitBtn">Submit</button>
+    <script src="script.js"></script>
 </body>
 </html>
