@@ -10,13 +10,31 @@ submitBtn.addEventListener('click', function() {
     //display the text in alert
 
 
-    let deliveryOptions = document.querySelectorAll('.delvivery');
+    let deliveryOptions = document.querySelectorAll('.delivery');
+    let selectedDelivery = null;
     for (let delivery of deliveryOptions) {
         if (delivery.checked == true) {
-            console.log(delivery, 'has been selected')
+            selectedDelivery = delivery;
+            break;
         }
 
     }
-    alert(product);
+    // step 1: select all the checkboxes
+    let options = document.querySelectorAll('.options');
+    let selectedOptions = [];
+    for(let o of options) {
+        if (o.checked == true) {
+            selectedOptions.push(o.value)
+        }
+    }
+    console.log(selectedOptions);
 
-})
+    //select a country
+    let country = document.querySelector('#country').value
+    
+    alert("Product: " + product 
+        + ", delivery: " + selectedDelivery.value 
+        + ", country:" + country 
+        + ", options:" + selectedOptions.join(','));
+
+});
