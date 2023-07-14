@@ -30,4 +30,6 @@ let button = document.querySelectorAll('#calculateBmiBtn');
                 <li>Result: ${status}</li>
             </ul>
         `;
+
+        alert("Weight: " + weight);
         })
