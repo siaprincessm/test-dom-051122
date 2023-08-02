@@ -15,12 +15,15 @@ let btn = document.querySelector('#submitBtn');
             if (email.includes('@') == false || email.includes('.') == false ){
                 emailIsInvalid = true;
             }
-        let errorMsg = "";
+    //TO SELECT THE ERROR ELEMENT INSIDE THE HTML FILE
+        let errorDiv = document.querySelector('#errors')
+
+    //TO INITIALIZE THE ERROR MESSAGES
             if (usernameTooShort) {
-                errorMsg += "Username too short";
+                errorDiv.innerHTML += "Username too short";
             }
             if (emailIsInvalid){
-                    errorMsg += "Email must include @ and .";
+                errorDiv.innerHTML += "Email must include @ and .";
             }
             alert(errorMsg);
   })
