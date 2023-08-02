@@ -25,33 +25,23 @@ let btn = document.querySelector('#submitBtn');
         }
 
     //SELECT ERROR TO DISPLAY INSIDE HTML FILE
-    let errorDiv = document.querySelector('#errors')
-
     //CLEAR THE EXISITNG ERROR MESSAGE
-    errorDiv = '';
-
+    let errorDiv = document.querySelector('#errors');
 
 
     //INITIALIZE ERROR MESSAGE
-        if (usernameTooShort) {
-            errorDiv += "Username is too short";
-            //document.querySelector('#error-message').innerHTML += "Username too short";
-        }
-        if (emailIsInvalid) {
-            errorDiv += "Email is invalid";
-            //document.querySelector('#error-email').innerHTML += "Invalid Email";
-        }
-        if (passwordIsInvalid){
-            errorDiv += "Password is invalid";
-            //document.querySelector('#error-password').innerHTML += "Password invalid";
-        }
-
-    //CHECKING
-        if (usernameTooShort || emailIsInvalid || passwordIsInvalid){
-            errorDiv.style.display = 'block';
-        }else {
-            errorDiv.style.display = 'none';
-        }
-        alert(errorDiv);
-        
+       if (usernameTooShort) {
+            errorDiv.innerHTML += "Username too short!";
+       }
+       if (emailIsInvalid){
+            errorDiv.innerHTML += "Email invalid";
+       }
+       if (passwordIsInvalid) {
+            errorDiv.innerHTML += "Password is invalid";
+       }
+    
+    //TO CHECK FOR ERRORS
+       if (usernameTooShort || emailIsInvalid){
+        errorDiv.style.display = 'block';
+       }
     })
