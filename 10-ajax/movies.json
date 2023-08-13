@@ -1,0 +1,17 @@
+[
+    {
+        "title":"Only  Murders  in the Building",
+        "genre":"Suspense",
+        "duration": 30
+    },
+    {
+        "title":"Greys  Anatomy",
+        "genre":"Drama",
+        "duration":40
+    },
+    {
+        "title":"Raffy Tulfo  in Action",
+        "genre":"Documentary",
+        "duration":120
+    }
+]
