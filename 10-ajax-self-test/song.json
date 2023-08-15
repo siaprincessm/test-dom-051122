@@ -1,0 +1,17 @@
+[
+    {
+        "song":"Vampire",
+        "singer":"Olivia Rodrigo",
+        "genre":"Pop"
+    },
+    {
+        "song":"Brighter than the sun",
+        "singer":"Aqualung",
+        "genre":"Romance"
+    },
+    {
+        "song":"Snooze",
+        "singer":"Sza",
+        "genre": "Drama"
+    }
+]
