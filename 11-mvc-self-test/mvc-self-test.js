@@ -1,7 +1,7 @@
 let number = 0;
 
 function getColor() {
-    if(number %2 == 0){
+    if( number % 2 == 0) {
         return "green";
     }else{
         return "red";
@@ -17,18 +17,18 @@ function runController () {
         number --;
         render();
     })
-    document.querySelector('#setBtn').addEventListener('click', function(){
-        number = document.querySelector('#number').value;
+    document.querySelector('#setBtn').addEventListener('click', function (){
+        number =  document.querySelector('#number').value;
         render();
     })
 }
 
-function render () {
+function render (){
     let box = document.querySelector('#box');
 
     box.innerHTML = number;
     box.style.color = getColor();
-}
 
-render();
-runController();
+}
+    render();
+    runController();
